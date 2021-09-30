@@ -1,31 +1,39 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import Episode from './../Episode';
 
 const testEpisode = {
-    id:1,
-    name: "",
-    image: "http://static.tvmaze.com/uploads/images/medium_landscape/67/168918.jpg",
-    season: 1,
-    number: 1,
-    summary: "",
-    runtime: 1
+  id: 1,
+  name: "",
+  image: "http://static.tvmaze.com/uploads/images/medium_landscape/67/168918.jpg",
+  season: 1,
+  number: 1,
+  summary: "",
+  runtime: 1
 }
 
 const testEpisodeWithoutImage = {
-    //Add in approprate test data structure here.
+  //Add in approprate test data structure here.
 }
 
 test("renders without error", () => {
+  // Arrange
+  render(<Episode episode={testEpisode}/>)
+  
+  // Act
+  
+  
+  // Assert
+  
+  
+});
+
+test("renders the summury test passed as prop", () => {
 
 });
 
-test("renders the summury test passed as prop", ()=>{
-    
-});
+test("renders default image when image is not defined", () => {
 
-test("renders default image when image is not defined", ()=>{
-    
 })
 
 //Tasks
